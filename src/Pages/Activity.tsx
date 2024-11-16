@@ -85,7 +85,7 @@ const Activity = () => {
           <CardContent>Overdue Projects</CardContent>
         </Card>
       </div>
-      <div className="bg-background-hover hidden sm:block text-white px-2 mt-4 projects">
+      <div className="bg-background-content hidden sm:block text-primary  px-2 mt-4 projects">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -113,7 +113,7 @@ const Activity = () => {
                     {project.tags.map((tag, i) => (
                       <Button
                         key={i}
-                        className="text-xs  bg-background-content shadow-custom-heavy h-[1.5rem]"
+                        className="text-xs text-primary  bg-background-content shadow-custom-heavy h-[1.5rem]"
                       >
                         {tag}
                       </Button>
@@ -125,7 +125,7 @@ const Activity = () => {
           ))}
         </Swiper>
       </div>
-      <div className="bg-background-content hidden max-sm:block text-primary px-2 mt-4 projects">
+      <div className="max-sm:bg-background-content hidden max-sm:block max-sm:text-primary  px-2 mt-4 projects">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -139,7 +139,7 @@ const Activity = () => {
           <p className="absolute top-[1rem]">Project Overview</p>
           {filterProjects?.map((project, i) => (
             <SwiperSlide key={i}>
-              <Card className=" h-[15rem] bg-[#152940] hover:border-green-400 transition hover:scale-[1.01] text-white ">
+              <Card className=" h-[15rem]  bg-background-content hover:border-green-400 transition hover:scale-[1.01] text-primary ">
                 <CardHeader>
                   <CardTitle className="text-lg">
                     {project.projectTitle}
@@ -151,7 +151,10 @@ const Activity = () => {
                 <CardFooter>
                   <div className="flex  w-full  gap-2 flex-wrap">
                     {project.tags.map((tag, i) => (
-                      <Button key={i} className="text-xs  h-[1.5rem]">
+                      <Button
+                        key={i}
+                        className="text-xs text-primary  bg-background-content shadow-custom-heavy h-[1.5rem]"
+                      >
                         {tag}
                       </Button>
                     ))}
