@@ -8,9 +8,7 @@
 
 - ➕ Add new tasks with title and description
 - 📝 Edit existing tasks
-- ✅ Mark tasks as complete or in progress
 - ❌ Delete tasks
-- 💾 Persistent storage using LocalStorage (or Firebase, optionally)
 - 📱 Responsive design for mobile and desktop
 
 ---
